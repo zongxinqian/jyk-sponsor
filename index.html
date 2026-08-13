@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark bg-[#05070d]">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#05070d">
+<title>赞助支持 · 极影库</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { font-family: "Microsoft YaHei", "微软雅黑", ui-sans-serif, system-ui, sans-serif; }
+@keyframes float-slow { 0%,100%{transform:translate(0,0)} 33%{transform:translate(20px,-14px)} 66%{transform:translate(-14px,16px)} }
+.animate-float-slow { animation: float-slow 14s ease-in-out infinite; }
+.hidden { display:none !important; }
+</style>
+</head>
+<body class="bg-[#05070d] text-[#e6edf3]">
+<!-- 背景 -->
+<div class="fixed inset-0 z-0 pointer-events-none">
+<div class="absolute inset-0 bg-gradient-to-br from-[#071018] via-[#05070d] to-[#04060b]"></div>
+<div class="absolute -top-40 -left-32 w-[30rem] h-[30rem] rounded-full bg-emby-500/15 blur-3xl animate-float-slow"></div>
+<div class="absolute -bottom-48 -right-32 w-[34rem] h-[34rem] rounded-full bg-[#123a2a]/30 blur-3xl animate-float-slow" style="animation-delay:-7s"></div>
+</div>
+
+<!-- 顶部 -->
+<header class="fixed top-0 inset-x-0 z-30 h-16 flex items-center justify-between px-5 sm:px-8">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-gradient-to-br from-emby-400 to-emby-700 flex items-center justify-center shadow-lg">
+<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.84z" clip-rule="evenodd"></path></svg>
+</div>
+<span class="text-lg font-black tracking-wide bg-gradient-to-r from-emby-300 to-emby-500 bg-clip-text text-transparent">极影库</span>
+</div>
+<a href="/login" class="text-xs text-gray-400 hover:text-emby-400 transition-colors">← 返回登录</a>
+</header>
+
+<main class="relative z-10 w-full min-h-screen flex items-center justify-center px-4 sm:px-5 py-16 sm:py-20">
+<div class="w-full max-w-md">
+<!-- 标题 -->
+<div class="text-center mb-6 sm:mb-8">
+<p class="text-[11px] font-semibold tracking-[0.3em] uppercase text-emby-400 mb-2">Sponsor Us</p>
+<h1 class="text-2xl sm:text-3xl font-black text-white mb-3">赞助支持 · 获取年卡邀请码</h1>
+<p class="text-sm text-gray-400">赞助服务器维护费用，赠送年卡邀请码</p>
+</div>
+
+<!-- 商品卡 -->
+<div class="rounded-2xl border border-emby-500/30 bg-[#0c1017]/90 backdrop-blur-xl shadow-2xl shadow-black/40 p-5 sm:p-6 mb-5">
+<div class="flex items-center justify-between mb-4">
+<div>
+<h3 class="text-lg font-black text-white">年卡会员</h3>
+<p class="text-xs text-gray-400 mt-0.5">365 天 · 4K 杜比视界 · 蓝光原盘</p>
+</div>
+<div class="text-right shrink-0 ml-3">
+<p class="text-2xl sm:text-3xl font-black text-emby-400">¥300</p>
+<p class="text-[10px] text-gray-400">/ 年</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 text-[11px] text-gray-500 dark:text-gray-400">
+<span class="px-2 py-0.5 rounded-full bg-emby-500/10 text-emby-400 border border-emby-500/20">4K 杜比视界</span>
+<span class="px-2 py-0.5 rounded-full bg-emby-500/10 text-emby-400 border border-emby-500/20">杜比全景声</span>
+<span class="px-2 py-0.5 rounded-full bg-emby-500/10 text-emby-400 border border-emby-500/20">30W+ 资源</span>
+</div>
+</div>
+
+<!-- 私聊引导 -->
+<div class="rounded-2xl border border-[#1e2734] bg-[#0c1017]/90 backdrop-blur-xl p-5 sm:p-6 mb-5 text-center">
+<div class="w-14 h-14 mx-auto rounded-2xl bg-[#229ED9]/15 flex items-center justify-center mb-3">
+<svg class="w-7 h-7 text-[#229ED9]" fill="currentColor" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+</div>
+<h3 class="text-lg font-black text-white mb-2">通过 Telegram 联系我们</h3>
+<p class="text-sm text-gray-400 mb-4">点击下方按钮，私聊站长完成赞助</p>
+<a id="tgLink" href="https://t.me/hostloc_yyds" target="_blank" rel="noopener"
+class="flex items-center justify-center gap-2 w-full rounded-xl bg-gradient-to-r from-[#229ED9] to-[#1c7fb0] hover:from-[#33b0e8] hover:to-[#229ED9] text-white font-bold py-4 transition-all shadow-lg shadow-[#229ED9]/25 active:scale-[0.98] text-sm tracking-widest">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+私聊站长赞助
+</a>
+<p class="text-[11px] text-gray-500 mt-3">赞助流程：私聊 → 转账 → 站长确认 → 发送邀请码</p>
+</div>
+
+<!-- 温馨提示 -->
+<div class="rounded-2xl border border-emby-500/20 bg-emby-500/5 p-5">
+<h4 class="text-sm font-bold text-emby-400 mb-2 flex items-center gap-2">
+<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10A8 8 0 11 2 10a8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+温馨提示
+</h4>
+<ul class="text-xs text-gray-400 space-y-1.5">
+<li>· 请通过上方 Telegram 与站长联系，请勿轻信其他渠道</li>
+<li>· 赞助为自愿行为，是对服务器维护的支持</li>
+<li>· 邀请码发放后不支持退款</li>
+</ul>
+</div>
+
+<p class="mt-8 text-center text-[11px] text-gray-500">Powered by 极影库 · 赞助即是对服务器的支持 ❤️</p>
+</div>
+</main>
+</body>
+</html>
